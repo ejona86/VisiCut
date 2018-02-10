@@ -663,38 +663,32 @@ public class MainView extends javax.swing.JFrame
    */
   @SuppressWarnings("unchecked")
   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-  private void initComponents()
-  {
+  private void initComponents() {
+    java.awt.GridBagConstraints gridBagConstraints;
     bindingGroup = new org.jdesktop.beansbinding.BindingGroup();
 
     visicutModel1 = VisicutModel.getInstance();
     filesDropSupport1 = new com.t_oster.uicomponents.FilesDropSupport();
     saveFileChooser = new javax.swing.JFileChooser();
     buttonGroup1 = new javax.swing.ButtonGroup();
-    jScrollPane2 = new javax.swing.JScrollPane();
-    previewPanel = new com.t_oster.visicut.gui.beans.PreviewPanel();
+    jPanel5 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
     jPanel2 = new javax.swing.JPanel();
-    jLabel1 = new javax.swing.JLabel();
-    jLabel2 = new javax.swing.JLabel();
-    jLabel5 = new javax.swing.JLabel();
-    materialComboBox = new com.t_oster.uicomponents.ImageComboBox();
     jLabel9 = new javax.swing.JLabel();
     laserCutterComboBox = new com.t_oster.uicomponents.ImageComboBox();
-    jLabel10 = new javax.swing.JLabel();
-    jLabelJobName = new javax.swing.JLabel();
-    jTextFieldJobName = new javax.swing.JTextField();
-    calculateTimeButton = new javax.swing.JButton();
-    timeLabel = new javax.swing.JLabel();
+    jLabel1 = new javax.swing.JLabel();
+    materialComboBox = new com.t_oster.uicomponents.ImageComboBox();
     btAddMaterial = new javax.swing.JButton();
+    jLabel5 = new javax.swing.JLabel();
     cbMaterialThickness = new javax.swing.JComboBox();
     btAddMaterialThickness = new javax.swing.JButton();
     jCheckBox1 = new javax.swing.JCheckBox();
-    executeJobButton = new javax.swing.JButton();
-    objectComboBox = new javax.swing.JComboBox();
     jSeparator1 = new javax.swing.JSeparator();
-    btRemoveObject = new javax.swing.JButton();
+    jLabel2 = new javax.swing.JLabel();
+    objectComboBox = new javax.swing.JComboBox();
+    jPanel9 = new javax.swing.JPanel();
     btAddObject = new javax.swing.JButton();
+    btRemoveObject = new javax.swing.JButton();
     jScrollPane3 = new javax.swing.JScrollPane();
     jPanel4 = new javax.swing.JPanel();
     mappingTabbedPane = new javax.swing.JTabbedPane();
@@ -702,18 +696,29 @@ public class MainView extends javax.swing.JFrame
     positionPanel = new com.t_oster.uicomponents.PositionPanel();
     propertyPanelContainer = new javax.swing.JScrollPane();
     propertiesPanel = new com.t_oster.visicut.gui.propertypanel.PropertiesPanel();
-    warningPanel = new com.t_oster.uicomponents.warnings.WarningPanel();
+    jPanel8 = new javax.swing.JPanel();
+    jLabel10 = new javax.swing.JLabel();
+    jLabelJobName = new javax.swing.JLabel();
+    jTextFieldJobName = new javax.swing.JTextField();
+    calculateTimeButton = new javax.swing.JButton();
+    timeLabel = new javax.swing.JLabel();
+    executeJobButton = new javax.swing.JButton();
+    jPanel6 = new javax.swing.JPanel();
+    jPanel7 = new javax.swing.JPanel();
     jPanel1 = new javax.swing.JPanel();
     jButton2 = new javax.swing.JButton();
     jButton1 = new javax.swing.JButton();
     btFitScreen = new javax.swing.JButton();
     bt1to1 = new javax.swing.JButton();
-    filler2 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(35, 35), new java.awt.Dimension(35, 35));
+    filler2 = new javax.swing.Box.Filler(null, new java.awt.Dimension(35, 35), new java.awt.Dimension(35, 35));
     btFacebook = new javax.swing.JButton();
     btThingiverse = new javax.swing.JButton();
     btQRWebcamScan = new javax.swing.JButton();
     jPanel3 = new javax.swing.JPanel();
     progressBar = new javax.swing.JProgressBar();
+    jScrollPane2 = new javax.swing.JScrollPane();
+    previewPanel = new com.t_oster.visicut.gui.beans.PreviewPanel();
+    warningPanel = new com.t_oster.uicomponents.warnings.WarningPanel();
     menuBar = new javax.swing.JMenuBar();
     fileMenu = new javax.swing.JMenu();
     newMenuItem = new javax.swing.JMenuItem();
@@ -765,19 +770,15 @@ public class MainView extends javax.swing.JFrame
     jSeparator3 = new javax.swing.JPopupMenu.Separator();
     aboutMenuItem = new javax.swing.JMenuItem();
 
-    visicutModel1.addPropertyChangeListener(new java.beans.PropertyChangeListener()
-    {
-      public void propertyChange(java.beans.PropertyChangeEvent evt)
-      {
+    visicutModel1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+      public void propertyChange(java.beans.PropertyChangeEvent evt) {
         visicutModel1PropertyChange(evt);
       }
     });
 
     filesDropSupport1.setComponent(previewPanel);
-    filesDropSupport1.addPropertyChangeListener(new java.beans.PropertyChangeListener()
-    {
-      public void propertyChange(java.beans.PropertyChangeEvent evt)
-      {
+    filesDropSupport1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+      public void propertyChange(java.beans.PropertyChangeEvent evt) {
         filesDropSupport1PropertyChange(evt);
       }
     });
@@ -792,108 +793,56 @@ public class MainView extends javax.swing.JFrame
     setTitle(resourceMap.getString("Form.title")); // NOI18N
     setName("Form"); // NOI18N
 
-    jScrollPane2.setBorder(javax.swing.BorderFactory.createTitledBorder(resourceMap.getString("jPanel1.border.title"))); // NOI18N
-    jScrollPane2.setName("jScrollPane2"); // NOI18N
-    jScrollPane2.setWheelScrollingEnabled(false);
-
-    previewPanel.setName("previewPanel"); // NOI18N
-    com.t_oster.visicut.gui.PreviewPanelKeyboardMouseHandler ppMouseHandler = new com.t_oster.visicut.gui.PreviewPanelKeyboardMouseHandler(this.previewPanel);
-
-    javax.swing.GroupLayout previewPanelLayout = new javax.swing.GroupLayout(previewPanel);
-    previewPanel.setLayout(previewPanelLayout);
-    previewPanelLayout.setHorizontalGroup(
-      previewPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGap(0, 605, Short.MAX_VALUE)
-    );
-    previewPanelLayout.setVerticalGroup(
-      previewPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGap(0, 566, Short.MAX_VALUE)
-    );
-
-    jScrollPane2.setViewportView(previewPanel);
+    jPanel5.setName("jPanel5"); // NOI18N
+    jPanel5.setLayout(new java.awt.BorderLayout());
 
     jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
     jScrollPane1.setName("jScrollPane1"); // NOI18N
 
     jPanel2.setName("jPanel2"); // NOI18N
 
-    jLabel1.setText(resourceMap.getString("jLabel1.text")); // NOI18N
-    jLabel1.setName("jLabel1"); // NOI18N
-
-    jLabel2.setText(resourceMap.getString("jLabel2.text")); // NOI18N
-    jLabel2.setName("jLabel2"); // NOI18N
-
-    jLabel5.setText(resourceMap.getString("jLabel5.text")); // NOI18N
-    jLabel5.setName("jLabel5"); // NOI18N
-
-    materialComboBox.setName("materialComboBox"); // NOI18N
-    materialComboBox.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
-        materialComboBoxActionPerformed(evt);
-      }
-    });
-
     jLabel9.setText(resourceMap.getString("jLabel9.text")); // NOI18N
     jLabel9.setName("jLabel9"); // NOI18N
 
     laserCutterComboBox.setName("laserCutterComboBox"); // NOI18N
-    laserCutterComboBox.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    laserCutterComboBox.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         laserCutterComboBoxActionPerformed(evt);
       }
     });
 
-    jLabel10.setText(resourceMap.getString("jLabel10.text")); // NOI18N
-    jLabel10.setName("jLabel10"); // NOI18N
+    jLabel1.setText(resourceMap.getString("jLabel1.text")); // NOI18N
+    jLabel1.setName("jLabel1"); // NOI18N
 
-    jLabelJobName.setText(resourceMap.getString("jLabelJobName.text")); // NOI18N
-    jLabelJobName.setName("jLabelJobName"); // NOI18N
-
-    jTextFieldJobName.setName("jTextFieldJobName"); // NOI18N
-
-    calculateTimeButton.setText(resourceMap.getString("calculateTimeButton.text")); // NOI18N
-    calculateTimeButton.setEnabled(false);
-    calculateTimeButton.setName("calculateTimeButton"); // NOI18N
-    calculateTimeButton.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
-        calculateTimeButtonActionPerformed(evt);
+    materialComboBox.setName("materialComboBox"); // NOI18N
+    materialComboBox.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        materialComboBoxActionPerformed(evt);
       }
     });
 
-    timeLabel.setText(resourceMap.getString("timeLabel.text")); // NOI18N
-    timeLabel.setName("timeLabel"); // NOI18N
-
     btAddMaterial.setIcon(PlatformIcon.get(PlatformIcon.ADD));
     btAddMaterial.setName("btAddMaterial"); // NOI18N
-    btAddMaterial.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    btAddMaterial.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         btAddMaterialActionPerformed(evt);
       }
     });
 
+    jLabel5.setText(resourceMap.getString("jLabel5.text")); // NOI18N
+    jLabel5.setName("jLabel5"); // NOI18N
+
     cbMaterialThickness.setName("cbMaterialThickness"); // NOI18N
-    cbMaterialThickness.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    cbMaterialThickness.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         cbMaterialThicknessActionPerformed(evt);
       }
     });
 
     btAddMaterialThickness.setIcon(PlatformIcon.get(PlatformIcon.ADD));
     btAddMaterialThickness.setName("btAddMaterialThickness"); // NOI18N
-    btAddMaterialThickness.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    btAddMaterialThickness.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         btAddMaterialThicknessActionPerformed(evt);
       }
     });
@@ -905,50 +854,42 @@ public class MainView extends javax.swing.JFrame
     org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, visicutModel1, org.jdesktop.beansbinding.ELProperty.create("${useThicknessAsFocusOffset}"), jCheckBox1, org.jdesktop.beansbinding.BeanProperty.create("selected"), "cbUseThickness");
     bindingGroup.addBinding(binding);
 
-    executeJobButton.setText(resourceMap.getString("executeJobButton.text")); // NOI18N
-    executeJobButton.setName("executeJobButton"); // NOI18N
-    executeJobButton.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
-        executeJobButtonActionPerformed(evt);
-      }
-    });
+    jSeparator1.setName("jSeparator1"); // NOI18N
+
+    jLabel2.setText(resourceMap.getString("jLabel2.text")); // NOI18N
+    jLabel2.setName("jLabel2"); // NOI18N
 
     objectComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
     objectComboBox.setName("objectComboBox"); // NOI18N
-    objectComboBox.addItemListener(new java.awt.event.ItemListener()
-    {
-      public void itemStateChanged(java.awt.event.ItemEvent evt)
-      {
+    objectComboBox.addItemListener(new java.awt.event.ItemListener() {
+      public void itemStateChanged(java.awt.event.ItemEvent evt) {
         objectComboBoxChangeHandler(evt);
       }
     });
 
-    jSeparator1.setName("jSeparator1"); // NOI18N
-
-    btRemoveObject.setIcon(PlatformIcon.get(PlatformIcon.REMOVE_FILE));
-    java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("com/t_oster/uicomponents/resources/EditableTablePanel"); // NOI18N
-    btRemoveObject.setToolTipText(bundle.getString("-")); // NOI18N
-    btRemoveObject.setName("btRemoveObject"); // NOI18N
-    btRemoveObject.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
-        btRemoveObjectActionPerformed(evt);
-      }
-    });
+    jPanel9.setName("jPanel9"); // NOI18N
+    jPanel9.setLayout(new java.awt.FlowLayout(2));
 
     btAddObject.setIcon(PlatformIcon.get(PlatformIcon.ADD_FILE));
+    java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("com/t_oster/uicomponents/resources/EditableTablePanel"); // NOI18N
     btAddObject.setToolTipText(bundle.getString("+")); // NOI18N
     btAddObject.setName("btAddObject"); // NOI18N
-    btAddObject.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    btAddObject.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         btAddObjectActionPerformed(evt);
       }
     });
+    jPanel9.add(btAddObject);
+
+    btRemoveObject.setIcon(PlatformIcon.get(PlatformIcon.REMOVE_FILE));
+    btRemoveObject.setToolTipText(bundle.getString("-")); // NOI18N
+    btRemoveObject.setName("btRemoveObject"); // NOI18N
+    btRemoveObject.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btRemoveObjectActionPerformed(evt);
+      }
+    });
+    jPanel9.add(btRemoveObject);
 
     jScrollPane3.setName("jScrollPane3"); // NOI18N
 
@@ -974,21 +915,21 @@ public class MainView extends javax.swing.JFrame
     jPanel4.setLayout(jPanel4Layout);
     jPanel4Layout.setHorizontalGroup(
       jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGap(0, 0, Short.MAX_VALUE)
+      .addGap(0, 752, Short.MAX_VALUE)
       .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
         .addGroup(jPanel4Layout.createSequentialGroup()
           .addGap(10, 10, 10)
-          .addComponent(mappingTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 529, Short.MAX_VALUE)
+          .addComponent(mappingTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 732, Short.MAX_VALUE)
           .addGap(10, 10, 10)))
     );
     jPanel4Layout.setVerticalGroup(
       jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGap(0, 0, Short.MAX_VALUE)
+      .addGap(0, 542, Short.MAX_VALUE)
       .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
         .addGroup(jPanel4Layout.createSequentialGroup()
           .addContainerGap()
           .addComponent(mappingTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 471, javax.swing.GroupLayout.PREFERRED_SIZE)
-          .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+          .addContainerGap(59, Short.MAX_VALUE)))
     );
 
     java.util.ResourceBundle bundle1 = java.util.ResourceBundle.getBundle("com/t_oster/visicut/gui/resources/MainView"); // NOI18N
@@ -1003,53 +944,34 @@ public class MainView extends javax.swing.JFrame
       .addGroup(jPanel2Layout.createSequentialGroup()
         .addContainerGap()
         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+          .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 754, Short.MAX_VALUE)
           .addGroup(jPanel2Layout.createSequentialGroup()
-            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-              .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jLabelJobName)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextFieldJobName)
-                .addGap(199, 199, 199)
-                .addComponent(executeJobButton))
-              .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jLabel10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(timeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(calculateTimeButton)))
-            .addContainerGap())
+            .addComponent(jLabel2)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addComponent(objectComboBox, 0, 643, Short.MAX_VALUE)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 64, Short.MAX_VALUE))
+          .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 754, Short.MAX_VALUE)
+          .addComponent(laserCutterComboBox, javax.swing.GroupLayout.DEFAULT_SIZE, 754, Short.MAX_VALUE)
           .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-              .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(objectComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btAddObject, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btRemoveObject, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-              .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.LEADING)
-              .addComponent(laserCutterComboBox, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(materialComboBox, javax.swing.GroupLayout.DEFAULT_SIZE, 717, Short.MAX_VALUE)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addComponent(btAddMaterial, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+          .addGroup(jPanel2Layout.createSequentialGroup()
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
               .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(materialComboBox, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(cbMaterialThickness, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btAddMaterial, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-              .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                  .addGroup(jPanel2Layout.createSequentialGroup()
-                    .addComponent(cbMaterialThickness, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(btAddMaterialThickness, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                  .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
-              .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                  .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.LEADING)
-                  .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING))
-                .addGap(0, 0, Short.MAX_VALUE))
-              .addComponent(jScrollPane3))
-            .addGap(20, 20, 20))))
+                .addComponent(btAddMaterialThickness, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+              .addComponent(jLabel5))
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 394, Short.MAX_VALUE)
+            .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
+          .addGroup(jPanel2Layout.createSequentialGroup()
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+              .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.LEADING)
+              .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING))
+            .addGap(0, 672, Short.MAX_VALUE)))
+        .addGap(20, 20, 20))
     );
     jPanel2Layout.setVerticalGroup(
       jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1076,35 +998,104 @@ public class MainView extends javax.swing.JFrame
         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-          .addComponent(btRemoveObject, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-          .addComponent(btAddObject, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+          .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
           .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
             .addComponent(objectComboBox)
             .addComponent(jLabel2)))
-        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)
-        .addGap(48, 48, 48)
-        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-          .addComponent(timeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-          .addComponent(jLabel10)
-          .addComponent(calculateTimeButton))
-        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-          .addComponent(jLabelJobName)
-          .addComponent(jTextFieldJobName)
-          .addComponent(executeJobButton))
+        .addGap(25, 25, 25)
+        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 544, javax.swing.GroupLayout.PREFERRED_SIZE)
         .addContainerGap())
     );
 
     jScrollPane1.setViewportView(jPanel2);
 
-    warningPanel.setName("warningPanel"); // NOI18N
-    warningPanel.setPreferredSize(new java.awt.Dimension(276, 123));
+    jPanel5.add(jScrollPane1, java.awt.BorderLayout.CENTER);
+
+    jPanel8.setName("jPanel8"); // NOI18N
+
+    jLabel10.setText(resourceMap.getString("jLabel10.text")); // NOI18N
+    jLabel10.setName("jLabel10"); // NOI18N
+
+    jLabelJobName.setText(resourceMap.getString("jLabelJobName.text")); // NOI18N
+    jLabelJobName.setName("jLabelJobName"); // NOI18N
+
+    jTextFieldJobName.setName("jTextFieldJobName"); // NOI18N
+
+    calculateTimeButton.setText(resourceMap.getString("calculateTimeButton.text")); // NOI18N
+    calculateTimeButton.setEnabled(false);
+    calculateTimeButton.setName("calculateTimeButton"); // NOI18N
+    calculateTimeButton.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        calculateTimeButtonActionPerformed(evt);
+      }
+    });
+
+    timeLabel.setText(resourceMap.getString("timeLabel.text")); // NOI18N
+    timeLabel.setName("timeLabel"); // NOI18N
+
+    executeJobButton.setText(resourceMap.getString("executeJobButton.text")); // NOI18N
+    executeJobButton.setName("executeJobButton"); // NOI18N
+    executeJobButton.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        executeJobButtonActionPerformed(evt);
+      }
+    });
+
+    javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+    jPanel8.setLayout(jPanel8Layout);
+    jPanel8Layout.setHorizontalGroup(
+      jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+      .addGap(0, 788, Short.MAX_VALUE)
+      .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        .addGroup(jPanel8Layout.createSequentialGroup()
+          .addGap(13, 13, 13)
+          .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+              .addComponent(jLabelJobName)
+              .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+              .addComponent(jTextFieldJobName, javax.swing.GroupLayout.DEFAULT_SIZE, 377, Short.MAX_VALUE)
+              .addGap(199, 199, 199)
+              .addComponent(executeJobButton))
+            .addGroup(jPanel8Layout.createSequentialGroup()
+              .addComponent(jLabel10)
+              .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+              .addComponent(timeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+              .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 410, Short.MAX_VALUE)
+              .addComponent(calculateTimeButton)))
+          .addGap(13, 13, 13)))
+    );
+    jPanel8Layout.setVerticalGroup(
+      jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+      .addGap(0, 100, Short.MAX_VALUE)
+      .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        .addGroup(jPanel8Layout.createSequentialGroup()
+          .addGap(11, 11, 11)
+          .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+            .addComponent(timeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jLabel10)
+            .addComponent(calculateTimeButton))
+          .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+          .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+            .addComponent(jLabelJobName)
+            .addComponent(jTextFieldJobName)
+            .addComponent(executeJobButton))
+          .addContainerGap()))
+    );
+
+    jPanel5.add(jPanel8, java.awt.BorderLayout.SOUTH);
+
+    getContentPane().add(jPanel5, java.awt.BorderLayout.EAST);
+
+    jPanel6.setName("jPanel6"); // NOI18N
+    jPanel6.setLayout(new java.awt.BorderLayout());
+
+    jPanel7.setName("jPanel7"); // NOI18N
+    jPanel7.setLayout(new java.awt.BorderLayout());
 
     jPanel1.setMinimumSize(new java.awt.Dimension(0, 0));
     jPanel1.setName("jPanel1"); // NOI18N
-    jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+    jPanel1.setLayout(new java.awt.FlowLayout(0));
 
     jButton2.setIcon(PlatformIcon.get(PlatformIcon.ZOOM_OUT));
     jButton2.setText(resourceMap.getString("jButton2.text")); // NOI18N
@@ -1113,10 +1104,8 @@ public class MainView extends javax.swing.JFrame
     jButton2.setMinimumSize(new java.awt.Dimension(30, 30));
     jButton2.setName("jButton2"); // NOI18N
     jButton2.setPreferredSize(new java.awt.Dimension(35, 35));
-    jButton2.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    jButton2.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         jButton2ActionPerformed(evt);
       }
     });
@@ -1129,10 +1118,8 @@ public class MainView extends javax.swing.JFrame
     jButton1.setMinimumSize(new java.awt.Dimension(30, 30));
     jButton1.setName("jButton1"); // NOI18N
     jButton1.setPreferredSize(new java.awt.Dimension(35, 35));
-    jButton1.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    jButton1.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         jButton1ActionPerformed(evt);
       }
     });
@@ -1145,10 +1132,8 @@ public class MainView extends javax.swing.JFrame
     btFitScreen.setMinimumSize(new java.awt.Dimension(35, 35));
     btFitScreen.setName("btFitScreen"); // NOI18N
     btFitScreen.setPreferredSize(new java.awt.Dimension(35, 35));
-    btFitScreen.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    btFitScreen.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         btFitScreenActionPerformed(evt);
       }
     });
@@ -1161,10 +1146,8 @@ public class MainView extends javax.swing.JFrame
     bt1to1.setMinimumSize(new java.awt.Dimension(35, 35));
     bt1to1.setName("bt1to1"); // NOI18N
     bt1to1.setPreferredSize(new java.awt.Dimension(35, 35));
-    bt1to1.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    bt1to1.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         bt1to1ActionPerformed(evt);
       }
     });
@@ -1180,10 +1163,8 @@ public class MainView extends javax.swing.JFrame
     btFacebook.setMinimumSize(new java.awt.Dimension(35, 35));
     btFacebook.setName("btFacebook"); // NOI18N
     btFacebook.setPreferredSize(new java.awt.Dimension(35, 35));
-    btFacebook.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    btFacebook.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         btFacebookActionPerformed(evt);
       }
     });
@@ -1197,10 +1178,8 @@ public class MainView extends javax.swing.JFrame
     btThingiverse.setMinimumSize(new java.awt.Dimension(35, 35));
     btThingiverse.setName("btThingiverse"); // NOI18N
     btThingiverse.setPreferredSize(new java.awt.Dimension(35, 35));
-    btThingiverse.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    btThingiverse.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         btThingiverseActionPerformed(evt);
       }
     });
@@ -1213,14 +1192,14 @@ public class MainView extends javax.swing.JFrame
     btQRWebcamScan.setMinimumSize(new java.awt.Dimension(35, 35));
     btQRWebcamScan.setName("btQRWebcamScan"); // NOI18N
     btQRWebcamScan.setPreferredSize(new java.awt.Dimension(35, 35));
-    btQRWebcamScan.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    btQRWebcamScan.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         btQRWebcamScanActionPerformed(evt);
       }
     });
     jPanel1.add(btQRWebcamScan);
+
+    jPanel7.add(jPanel1, java.awt.BorderLayout.CENTER);
 
     jPanel3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
     jPanel3.setName("jPanel3"); // NOI18N
@@ -1232,6 +1211,37 @@ public class MainView extends javax.swing.JFrame
     progressBar.setName("progressBar"); // NOI18N
     jPanel3.add(progressBar);
 
+    jPanel7.add(jPanel3, java.awt.BorderLayout.EAST);
+
+    jPanel6.add(jPanel7, java.awt.BorderLayout.NORTH);
+
+    jScrollPane2.setBorder(javax.swing.BorderFactory.createTitledBorder(resourceMap.getString("jPanel1.border.title"))); // NOI18N
+    jScrollPane2.setName("jScrollPane2"); // NOI18N
+    jScrollPane2.setWheelScrollingEnabled(false);
+
+    previewPanel.setName("previewPanel"); // NOI18N
+    com.t_oster.visicut.gui.PreviewPanelKeyboardMouseHandler ppMouseHandler = new com.t_oster.visicut.gui.PreviewPanelKeyboardMouseHandler(this.previewPanel);
+
+    javax.swing.GroupLayout previewPanelLayout = new javax.swing.GroupLayout(previewPanel);
+    previewPanel.setLayout(previewPanelLayout);
+    previewPanelLayout.setHorizontalGroup(
+      previewPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+      .addGap(0, 1149, Short.MAX_VALUE)
+    );
+    previewPanelLayout.setVerticalGroup(
+      previewPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+      .addGap(0, 860, Short.MAX_VALUE)
+    );
+
+    jScrollPane2.setViewportView(previewPanel);
+
+    jPanel6.add(jScrollPane2, java.awt.BorderLayout.CENTER);
+
+    warningPanel.setName("warningPanel"); // NOI18N
+    jPanel6.add(warningPanel, java.awt.BorderLayout.SOUTH);
+
+    getContentPane().add(jPanel6, java.awt.BorderLayout.CENTER);
+
     menuBar.setName("menuBar"); // NOI18N
 
     fileMenu.setText(resourceMap.getString("fileMenu.text")); // NOI18N
@@ -1239,10 +1249,8 @@ public class MainView extends javax.swing.JFrame
 
     newMenuItem.setText(resourceMap.getString("newMenuItem.text")); // NOI18N
     newMenuItem.setName("newMenuItem"); // NOI18N
-    newMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    newMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         newMenuItemActionPerformed(evt);
       }
     });
@@ -1251,10 +1259,8 @@ public class MainView extends javax.swing.JFrame
     openMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
     openMenuItem.setText(resourceMap.getString("openMenuItem.text")); // NOI18N
     openMenuItem.setName("openMenuItem"); // NOI18N
-    openMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    openMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         openMenuItemActionPerformed(evt);
       }
     });
@@ -1262,10 +1268,8 @@ public class MainView extends javax.swing.JFrame
 
     importMenuItem.setText(resourceMap.getString("importMenuItem.text")); // NOI18N
     importMenuItem.setName("importMenuItem"); // NOI18N
-    importMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    importMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         importMenuItemActionPerformed(evt);
       }
     });
@@ -1286,10 +1290,8 @@ public class MainView extends javax.swing.JFrame
     saveMenuItem.setMnemonic('s');
     saveMenuItem.setText(resourceMap.getString("saveMenuItem.text")); // NOI18N
     saveMenuItem.setName("saveMenuItem"); // NOI18N
-    saveMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    saveMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         saveMenuItemActionPerformed(evt);
       }
     });
@@ -1298,10 +1300,8 @@ public class MainView extends javax.swing.JFrame
     saveAsMenuItem.setMnemonic('a');
     saveAsMenuItem.setText(resourceMap.getString("saveAsMenuItem.text")); // NOI18N
     saveAsMenuItem.setName("saveAsMenuItem"); // NOI18N
-    saveAsMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    saveAsMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         saveAsMenuItemActionPerformed(evt);
       }
     });
@@ -1309,10 +1309,8 @@ public class MainView extends javax.swing.JFrame
 
     exportGcodeMenuItem.setText("Export Laser Code..."); // NOI18N
     exportGcodeMenuItem.setName("exportGcodeMenuItem"); // NOI18N
-    exportGcodeMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    exportGcodeMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         exportGcodeMenuItemActionPerformed(evt);
       }
     });
@@ -1324,10 +1322,8 @@ public class MainView extends javax.swing.JFrame
     executeJobMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_MASK));
     executeJobMenuItem.setText(resourceMap.getString("executeJobMenuItem.text")); // NOI18N
     executeJobMenuItem.setName("executeJobMenuItem"); // NOI18N
-    executeJobMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    executeJobMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         executeJobMenuItemActionPerformed(evt);
       }
     });
@@ -1340,10 +1336,8 @@ public class MainView extends javax.swing.JFrame
     exitMenuItem.setMnemonic('x');
     exitMenuItem.setText(resourceMap.getString("exitMenuItem.text")); // NOI18N
     exitMenuItem.setName("exitMenuItem"); // NOI18N
-    exitMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    exitMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         exitMenuItemActionPerformed(evt);
       }
     });
@@ -1371,10 +1365,8 @@ public class MainView extends javax.swing.JFrame
     zoomWindowMenuItem.setText(resourceMap.getString("zoomWindowMenuItem.text")); // NOI18N
     zoomWindowMenuItem.setToolTipText(resourceMap.getString("zoomWindowMenuItem.toolTipText")); // NOI18N
     zoomWindowMenuItem.setName("zoomWindowMenuItem"); // NOI18N
-    zoomWindowMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    zoomWindowMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         zoomWindowMenuItemActionPerformed(evt);
       }
     });
@@ -1384,10 +1376,8 @@ public class MainView extends javax.swing.JFrame
     zoomRealMenuItem.setText(resourceMap.getString("zoomRealMenuItem.text")); // NOI18N
     zoomRealMenuItem.setToolTipText(resourceMap.getString("zoomRealMenuItem.toolTipText")); // NOI18N
     zoomRealMenuItem.setName("zoomRealMenuItem"); // NOI18N
-    zoomRealMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    zoomRealMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         zoomRealMenuItemActionPerformed(evt);
       }
     });
@@ -1399,10 +1389,8 @@ public class MainView extends javax.swing.JFrame
     cameraActiveMenuItem.setText(resourceMap.getString("cameraActiveMenuItem.text")); // NOI18N
     cameraActiveMenuItem.setToolTipText(resourceMap.getString("cameraActiveMenuItem.toolTipText")); // NOI18N
     cameraActiveMenuItem.setName("cameraActiveMenuItem"); // NOI18N
-    cameraActiveMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    cameraActiveMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         cameraActiveMenuItemActionPerformed(evt);
       }
     });
@@ -1411,10 +1399,8 @@ public class MainView extends javax.swing.JFrame
     projectorActiveMenuItem.setText(resourceMap.getString("projectorActiveMenuItem.text")); // NOI18N
     projectorActiveMenuItem.setToolTipText(resourceMap.getString("projectorActiveMenuItem.toolTipText")); // NOI18N
     projectorActiveMenuItem.setName("projectorActiveMenuItem"); // NOI18N
-    projectorActiveMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    projectorActiveMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         projectorActiveMenuItemActionPerformed(evt);
       }
     });
@@ -1438,10 +1424,8 @@ public class MainView extends javax.swing.JFrame
 
     facebookMenuItem.setText(resourceMap.getString("facebookMenuItem.text")); // NOI18N
     facebookMenuItem.setName("facebookMenuItem"); // NOI18N
-    facebookMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    facebookMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         facebookMenuItemActionPerformed(evt);
       }
     });
@@ -1449,10 +1433,8 @@ public class MainView extends javax.swing.JFrame
 
     thingiverseMenuItem.setText(resourceMap.getString("thingiverseMenuItem.text")); // NOI18N
     thingiverseMenuItem.setName("thingiverseMenuItem"); // NOI18N
-    thingiverseMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    thingiverseMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         thingiverseMenuItemActionPerformed(evt);
       }
     });
@@ -1460,10 +1442,8 @@ public class MainView extends javax.swing.JFrame
 
     webcamQRCodeMenuItem.setText(resourceMap.getString("webcamQRCodeMenuItem.text")); // NOI18N
     webcamQRCodeMenuItem.setName("webcamQRCodeMenuItem"); // NOI18N
-    webcamQRCodeMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    webcamQRCodeMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         webcamQRCodeMenuItemActionPerformed(evt);
       }
     });
@@ -1476,10 +1456,8 @@ public class MainView extends javax.swing.JFrame
 
     calibrateCameraMenuItem.setText(resourceMap.getString("calibrateCameraMenuItem.text")); // NOI18N
     calibrateCameraMenuItem.setName("calibrateCameraMenuItem"); // NOI18N
-    calibrateCameraMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    calibrateCameraMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         calibrateCameraMenuItemActionPerformed(evt);
       }
     });
@@ -1490,10 +1468,8 @@ public class MainView extends javax.swing.JFrame
 
     jMenuItem1.setText(resourceMap.getString("jmDownloadSettings.text")); // NOI18N
     jMenuItem1.setName("jmDownloadSettings"); // NOI18N
-    jMenuItem1.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         jmDownloadSettingsActionPerformed(evt);
       }
     });
@@ -1501,10 +1477,8 @@ public class MainView extends javax.swing.JFrame
 
     jmImportSettings.setText(resourceMap.getString("jmImportSettings.text")); // NOI18N
     jmImportSettings.setName("jmImportSettings"); // NOI18N
-    jmImportSettings.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    jmImportSettings.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         jmImportSettingsActionPerformed(evt);
       }
     });
@@ -1512,10 +1486,8 @@ public class MainView extends javax.swing.JFrame
 
     jmExportSettings.setText(resourceMap.getString("jmExportSettings.text")); // NOI18N
     jmExportSettings.setName("jmExportSettings"); // NOI18N
-    jmExportSettings.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    jmExportSettings.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         jmExportSettingsActionPerformed(evt);
       }
     });
@@ -1526,10 +1498,8 @@ public class MainView extends javax.swing.JFrame
 
     editMappingMenuItem.setText(resourceMap.getString("editMappingMenuItem.text")); // NOI18N
     editMappingMenuItem.setName("editMappingMenuItem"); // NOI18N
-    editMappingMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    editMappingMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         editMappingMenuItemActionPerformed(evt);
       }
     });
@@ -1537,10 +1507,8 @@ public class MainView extends javax.swing.JFrame
 
     jmManageLaserprofiles.setText(resourceMap.getString("jmManageLaserprofiles.text")); // NOI18N
     jmManageLaserprofiles.setName("jmManageLaserprofiles"); // NOI18N
-    jmManageLaserprofiles.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    jmManageLaserprofiles.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         jmManageLaserprofilesActionPerformed(evt);
       }
     });
@@ -1548,10 +1516,8 @@ public class MainView extends javax.swing.JFrame
 
     materialMenuItem.setText(resourceMap.getString("materialMenuItem.text")); // NOI18N
     materialMenuItem.setName("materialMenuItem"); // NOI18N
-    materialMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    materialMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         materialMenuItemActionPerformed(evt);
       }
     });
@@ -1559,10 +1525,8 @@ public class MainView extends javax.swing.JFrame
 
     jMenuItem2.setText(resourceMap.getString("jMenuItem2.text")); // NOI18N
     jMenuItem2.setName("jMenuItem2"); // NOI18N
-    jMenuItem2.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         jMenuItem2ActionPerformed(evt);
       }
     });
@@ -1573,10 +1537,8 @@ public class MainView extends javax.swing.JFrame
 
     jmPreferences.setText(bundle1.getString("PREFERENCES")); // NOI18N
     jmPreferences.setName("jmPreferences"); // NOI18N
-    jmPreferences.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    jmPreferences.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         jmPreferencesActionPerformed(evt);
       }
     });
@@ -1589,10 +1551,8 @@ public class MainView extends javax.swing.JFrame
 
     jmInstallInkscape.setText(resourceMap.getString("jmInstallInkscape.text")); // NOI18N
     jmInstallInkscape.setName("jmInstallInkscape"); // NOI18N
-    jmInstallInkscape.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    jmInstallInkscape.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         jmInstallInkscapeActionPerformed(evt);
       }
     });
@@ -1600,10 +1560,8 @@ public class MainView extends javax.swing.JFrame
 
     jmInstallIllustrator.setText(resourceMap.getString("jmInstallIllustrator.text")); // NOI18N
     jmInstallIllustrator.setName("jmInstallIllustrator"); // NOI18N
-    jmInstallIllustrator.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    jmInstallIllustrator.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         jmInstallIllustratorActionPerformed(evt);
       }
     });
@@ -1618,10 +1576,8 @@ public class MainView extends javax.swing.JFrame
     manualMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F1, 0));
     manualMenuItem.setText(resourceMap.getString("manualMenuItem.text")); // NOI18N
     manualMenuItem.setName("manualMenuItem"); // NOI18N
-    manualMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    manualMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         manualMenuItemActionPerformed(evt);
       }
     });
@@ -1629,10 +1585,8 @@ public class MainView extends javax.swing.JFrame
 
     wikiMenuItem.setText(resourceMap.getString("wikiMenuItem.text")); // NOI18N
     wikiMenuItem.setName("wikiMenuItem"); // NOI18N
-    wikiMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    wikiMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         wikiMenuItemActionPerformed(evt);
       }
     });
@@ -1644,10 +1598,8 @@ public class MainView extends javax.swing.JFrame
     aboutMenuItem.setAction(actionMap.get("showAboutDialog")); // NOI18N
     aboutMenuItem.setText(resourceMap.getString("aboutMenuItem.text")); // NOI18N
     aboutMenuItem.setName("aboutMenuItem"); // NOI18N
-    aboutMenuItem.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    aboutMenuItem.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         aboutMenuItemActionPerformed(evt);
       }
     });
@@ -1656,43 +1608,6 @@ public class MainView extends javax.swing.JFrame
     menuBar.add(helpMenu);
 
     setJMenuBar(menuBar);
-
-    javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-    getContentPane().setLayout(layout);
-    layout.setHorizontalGroup(
-      layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-        .addGap(0, 0, 0)
-        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-          .addComponent(warningPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 545, Short.MAX_VALUE)
-          .addGroup(layout.createSequentialGroup()
-            .addGap(2, 2, 2)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-              .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 397, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-              .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))))
-        .addGap(18, 18, 18)
-        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 574, Short.MAX_VALUE)
-        .addGap(0, 0, 0))
-    );
-    layout.setVerticalGroup(
-      layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGroup(layout.createSequentialGroup()
-        .addGap(0, 0, 0)
-        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-          .addComponent(jScrollPane1)
-          .addGroup(layout.createSequentialGroup()
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-              .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-              .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGap(8, 8, 8)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 604, Short.MAX_VALUE)
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-            .addComponent(warningPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
-            .addContainerGap())))
-    );
 
     bindingGroup.bind();
 
@@ -3547,6 +3462,11 @@ private void projectorActiveMenuItemActionPerformed(java.awt.event.ActionEvent e
   private javax.swing.JPanel jPanel2;
   private javax.swing.JPanel jPanel3;
   private javax.swing.JPanel jPanel4;
+  private javax.swing.JPanel jPanel5;
+  private javax.swing.JPanel jPanel6;
+  private javax.swing.JPanel jPanel7;
+  private javax.swing.JPanel jPanel8;
+  private javax.swing.JPanel jPanel9;
   private javax.swing.JScrollPane jScrollPane1;
   private javax.swing.JScrollPane jScrollPane2;
   private javax.swing.JScrollPane jScrollPane3;
