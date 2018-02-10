@@ -363,8 +363,7 @@ public class EditableTablePanel extends javax.swing.JPanel
    */
   @SuppressWarnings("unchecked")
   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-  private void initComponents()
-  {
+  private void initComponents() {
 
     jScrollPane1 = new javax.swing.JScrollPane();
     table = new BetterJTable();
@@ -378,15 +377,13 @@ public class EditableTablePanel extends javax.swing.JPanel
     btRevert = new javax.swing.JButton();
 
     table.setModel(new javax.swing.table.DefaultTableModel(
-      new Object [][]
-      {
+      new Object [][] {
         {null, null, null, null},
         {null, null, null, null},
         {null, null, null, null},
         {null, null, null, null}
       },
-      new String []
-      {
+      new String [] {
         "Title 1", "Title 2", "Title 3", "Title 4"
       }
     ));
@@ -395,60 +392,48 @@ public class EditableTablePanel extends javax.swing.JPanel
     btAdd.setIcon(PlatformIcon.get(PlatformIcon.ADD));
     java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("com/t_oster/uicomponents/resources/EditableTablePanel"); // NOI18N
     btAdd.setToolTipText(bundle.getString("+")); // NOI18N
-    btAdd.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    btAdd.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         btAddActionPerformed(evt);
       }
     });
 
     btRemove.setIcon(PlatformIcon.get(PlatformIcon.REMOVE));
     btRemove.setToolTipText(bundle.getString("-")); // NOI18N
-    btRemove.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    btRemove.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         btRemoveActionPerformed(evt);
       }
     });
 
     btEdit.setIcon(PlatformIcon.get(PlatformIcon.EDIT));
     btEdit.setToolTipText(bundle.getString("EDIT")); // NOI18N
-    btEdit.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    btEdit.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         btEditActionPerformed(evt);
       }
     });
 
     btUp.setIcon(PlatformIcon.get(PlatformIcon.UP));
     btUp.setToolTipText(bundle.getString("UP")); // NOI18N
-    btUp.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    btUp.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         btUpActionPerformed(evt);
       }
     });
 
     btDown.setIcon(PlatformIcon.get(PlatformIcon.DOWN));
     btDown.setToolTipText(bundle.getString("DOWN")); // NOI18N
-    btDown.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    btDown.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         btDownActionPerformed(evt);
       }
     });
 
     btLoad.setIcon(PlatformIcon.get(PlatformIcon.LOAD));
     btLoad.setToolTipText(bundle.getString("LOAD")); // NOI18N
-    btLoad.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    btLoad.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         btLoadActionPerformed(evt);
       }
     });
@@ -458,10 +443,8 @@ public class EditableTablePanel extends javax.swing.JPanel
 
     btRevert.setIcon(PlatformIcon.get(PlatformIcon.UNDO));
     btRevert.setToolTipText(bundle.getString("REVERT")); // NOI18N
-    btRevert.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    btRevert.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         btRevertActionPerformed(evt);
       }
     });
@@ -470,8 +453,8 @@ public class EditableTablePanel extends javax.swing.JPanel
     this.setLayout(layout);
     layout.setHorizontalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGroup(layout.createSequentialGroup()
-        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 475, Short.MAX_VALUE)
+      .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 19, Short.MAX_VALUE)
         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
           .addComponent(btLoad, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -495,7 +478,7 @@ public class EditableTablePanel extends javax.swing.JPanel
         .addComponent(btUp)
         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
         .addComponent(btDown)
-        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 176, Short.MAX_VALUE)
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         .addComponent(btRevert)
         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
         .addComponent(btLoad)

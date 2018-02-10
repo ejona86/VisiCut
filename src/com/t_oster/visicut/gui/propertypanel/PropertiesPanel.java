@@ -210,8 +210,7 @@ public class PropertiesPanel extends javax.swing.JPanel implements PropertyChang
    */
   @SuppressWarnings("unchecked")
   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-  private void initComponents()
-  {
+  private void initComponents() {
 
     setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
   }// </editor-fold>//GEN-END:initComponents

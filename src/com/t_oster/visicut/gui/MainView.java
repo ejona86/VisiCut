@@ -911,7 +911,6 @@ public class MainView extends javax.swing.JFrame
       .addGroup(jPanel2Layout.createSequentialGroup()
         .addContainerGap()
         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-          .addComponent(mappingTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 762, Short.MAX_VALUE)
           .addComponent(laserCutterComboBox, javax.swing.GroupLayout.DEFAULT_SIZE, 762, Short.MAX_VALUE)
           .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
             .addComponent(materialComboBox, javax.swing.GroupLayout.DEFAULT_SIZE, 725, Short.MAX_VALUE)
@@ -935,9 +934,10 @@ public class MainView extends javax.swing.JFrame
           .addGroup(jPanel2Layout.createSequentialGroup()
             .addComponent(jLabel2)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-            .addComponent(objectComboBox, 0, 680, Short.MAX_VALUE)
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+            .addComponent(objectComboBox, 0, 668, Short.MAX_VALUE)
+            .addGap(18, 18, 18)
+            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+          .addComponent(mappingTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 762, Short.MAX_VALUE))
         .addContainerGap())
     );
     jPanel2Layout.setVerticalGroup(
@@ -966,12 +966,11 @@ public class MainView extends javax.swing.JFrame
         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-          .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
-          .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-          .addComponent(objectComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-        .addComponent(mappingTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 563, javax.swing.GroupLayout.PREFERRED_SIZE)
-        .addContainerGap())
+          .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+          .addComponent(objectComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+          .addComponent(jLabel2))
+        .addComponent(mappingTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addContainerGap(18, Short.MAX_VALUE))
     );
 
     java.util.ResourceBundle bundle1 = java.util.ResourceBundle.getBundle("com/t_oster/visicut/gui/resources/MainView"); // NOI18N

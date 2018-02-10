@@ -530,10 +530,9 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="mappingTabbedPane" alignment="0" pref="762" max="32767" attributes="0"/>
                               <Component id="laserCutterComboBox" alignment="0" pref="762" max="32767" attributes="1"/>
                               <Group type="102" alignment="1" attributes="0">
                                   <Component id="materialComboBox" pref="725" max="32767" attributes="1"/>
@@ -563,10 +562,11 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="objectComboBox" pref="680" max="32767" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="objectComboBox" pref="668" max="32767" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jPanel9" max="32767" attributes="0"/>
                               </Group>
+                              <Component id="mappingTabbedPane" alignment="0" pref="762" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -602,13 +602,12 @@
                           <Component id="jSeparator1" min="-2" pref="8" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jPanel9" pref="36" max="32767" attributes="1"/>
-                              <Component id="jLabel2" alignment="0" min="-2" pref="36" max="-2" attributes="1"/>
+                              <Component id="jPanel9" min="-2" max="-2" attributes="1"/>
                               <Component id="objectComboBox" min="-2" max="-2" attributes="1"/>
+                              <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="1"/>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="mappingTabbedPane" min="-2" pref="563" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="mappingTabbedPane" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="18" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
