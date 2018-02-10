@@ -96,18 +96,17 @@ public class MappingPanel extends javax.swing.JPanel
    */
   @SuppressWarnings("unchecked")
   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-  private void initComponents()
-  {
+  private void initComponents() {
 
     predefinedMappingBox = new com.t_oster.visicut.gui.mapping.PredefinedMappingBox();
-    propertyMappingPanel = new com.t_oster.visicut.gui.mapping.PropertyMappingPanel();
-    customMappingPanel = new com.t_oster.visicut.gui.mapping.CustomMappingPanel();
     btProfileSettings = new javax.swing.JButton();
+    cardPanel = new javax.swing.JPanel();
+    emptyPanel = new javax.swing.JPanel();
+    customMappingPanel = new com.t_oster.visicut.gui.mapping.CustomMappingPanel();
+    propertyMappingPanel = new com.t_oster.visicut.gui.mapping.PropertyMappingPanel();
 
-    predefinedMappingBox.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    predefinedMappingBox.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         predefinedMappingBoxActionPerformed(evt);
       }
     });
@@ -115,23 +114,37 @@ public class MappingPanel extends javax.swing.JPanel
     btProfileSettings.setIcon(PlatformIcon.get(PlatformIcon.EDIT));
     java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("com/t_oster/uicomponents/resources/EditableTablePanel"); // NOI18N
     btProfileSettings.setToolTipText(bundle.getString("-")); // NOI18N
-    btProfileSettings.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
+    btProfileSettings.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
         btProfileSettingsActionPerformed(evt);
       }
     });
+
+    cardPanel.setLayout(new java.awt.CardLayout());
+
+    javax.swing.GroupLayout emptyPanelLayout = new javax.swing.GroupLayout(emptyPanel);
+    emptyPanel.setLayout(emptyPanelLayout);
+    emptyPanelLayout.setHorizontalGroup(
+      emptyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+      .addGap(0, 219, Short.MAX_VALUE)
+    );
+    emptyPanelLayout.setVerticalGroup(
+      emptyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+      .addGap(0, 218, Short.MAX_VALUE)
+    );
+
+    cardPanel.add(emptyPanel, "empty");
+    cardPanel.add(customMappingPanel, "custom");
+    cardPanel.add(propertyMappingPanel, "property");
 
     javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
     this.setLayout(layout);
     layout.setHorizontalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGroup(layout.createSequentialGroup()
+      .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
         .addContainerGap()
-        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-          .addComponent(propertyMappingPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 357, Short.MAX_VALUE)
-          .addComponent(customMappingPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+          .addComponent(cardPanel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE)
           .addGroup(layout.createSequentialGroup()
             .addComponent(predefinedMappingBox, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -145,10 +158,9 @@ public class MappingPanel extends javax.swing.JPanel
         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
           .addComponent(predefinedMappingBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
           .addComponent(btProfileSettings))
-        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-        .addComponent(propertyMappingPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 229, Short.MAX_VALUE)
-        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-        .addComponent(customMappingPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 269, Short.MAX_VALUE))
+        .addGap(12, 12, 12)
+        .addComponent(cardPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE)
+        .addContainerGap())
     );
   }// </editor-fold>//GEN-END:initComponents
 
@@ -160,13 +172,19 @@ public class MappingPanel extends javax.swing.JPanel
       String property = ((PredefinedMappingBox.MapByPropertyEntry) selected).property;
       this.propertyMappingPanel.setSelectedProperty(property);
       this.predefinedMappingBox.setSelectedItem(predefinedMappingBox.BY_PROPERTY);
-      this.customMappingPanel.setVisible(false);
-      this.propertyMappingPanel.setVisible(true);
+      ((java.awt.CardLayout) this.cardPanel.getLayout()).show(this.cardPanel, "property");
+    }
+    else if (predefinedMappingBox.BY_PROPERTY.equals(selected))
+    {
+      ((java.awt.CardLayout) this.cardPanel.getLayout()).show(this.cardPanel, "property");
+    }
+    else if (predefinedMappingBox.CUSTOM.equals(selected))
+    {
+      ((java.awt.CardLayout) this.cardPanel.getLayout()).show(this.cardPanel, "custom");
     }
     else
     {
-      this.customMappingPanel.setVisible(predefinedMappingBox.CUSTOM.equals(selected));
-      this.propertyMappingPanel.setVisible(predefinedMappingBox.BY_PROPERTY.equals(selected));
+      ((java.awt.CardLayout) this.cardPanel.getLayout()).show(this.cardPanel, "empty");
     }
     this.btProfileSettings.setVisible(!predefinedMappingBox.NONE.equals(selected) && !predefinedMappingBox.CUSTOM.equals(selected));
     
@@ -195,7 +213,9 @@ public class MappingPanel extends javax.swing.JPanel
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JButton btProfileSettings;
+  private javax.swing.JPanel cardPanel;
   private com.t_oster.visicut.gui.mapping.CustomMappingPanel customMappingPanel;
+  private javax.swing.JPanel emptyPanel;
   private com.t_oster.visicut.gui.mapping.PredefinedMappingBox predefinedMappingBox;
   private com.t_oster.visicut.gui.mapping.PropertyMappingPanel propertyMappingPanel;
   // End of variables declaration//GEN-END:variables
