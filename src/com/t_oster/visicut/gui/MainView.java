@@ -911,9 +911,9 @@ public class MainView extends javax.swing.JFrame
       .addGroup(jPanel2Layout.createSequentialGroup()
         .addContainerGap()
         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-          .addComponent(laserCutterComboBox, javax.swing.GroupLayout.DEFAULT_SIZE, 762, Short.MAX_VALUE)
+          .addComponent(laserCutterComboBox, javax.swing.GroupLayout.DEFAULT_SIZE, 372, Short.MAX_VALUE)
           .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-            .addComponent(materialComboBox, javax.swing.GroupLayout.DEFAULT_SIZE, 725, Short.MAX_VALUE)
+            .addComponent(materialComboBox, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
             .addComponent(btAddMaterial, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
           .addGroup(jPanel2Layout.createSequentialGroup()
@@ -923,21 +923,21 @@ public class MainView extends javax.swing.JFrame
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btAddMaterialThickness, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
               .addComponent(jLabel5))
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 402, Short.MAX_VALUE)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
           .addGroup(jPanel2Layout.createSequentialGroup()
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
               .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.LEADING)
               .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING))
-            .addGap(0, 680, Short.MAX_VALUE))
-          .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 762, Short.MAX_VALUE)
+            .addGap(0, 290, Short.MAX_VALUE))
+          .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 372, Short.MAX_VALUE)
           .addGroup(jPanel2Layout.createSequentialGroup()
             .addComponent(jLabel2)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-            .addComponent(objectComboBox, 0, 668, Short.MAX_VALUE)
+            .addComponent(objectComboBox, 0, 278, Short.MAX_VALUE)
             .addGap(18, 18, 18)
             .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-          .addComponent(mappingTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 762, Short.MAX_VALUE))
+          .addComponent(mappingTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 372, Short.MAX_VALUE))
         .addContainerGap())
     );
     jPanel2Layout.setVerticalGroup(
@@ -970,7 +970,7 @@ public class MainView extends javax.swing.JFrame
           .addComponent(objectComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
           .addComponent(jLabel2))
         .addComponent(mappingTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        .addContainerGap(18, Short.MAX_VALUE))
+        .addContainerGap(215, Short.MAX_VALUE))
     );
 
     java.util.ResourceBundle bundle1 = java.util.ResourceBundle.getBundle("com/t_oster/visicut/gui/resources/MainView"); // NOI18N
@@ -988,6 +988,7 @@ public class MainView extends javax.swing.JFrame
     jLabelJobName.setText(resourceMap.getString("jLabelJobName.text")); // NOI18N
     jLabelJobName.setName("jLabelJobName"); // NOI18N
 
+    jTextFieldJobName.setColumns(10);
     jTextFieldJobName.setName("jTextFieldJobName"); // NOI18N
 
     calculateTimeButton.setText(resourceMap.getString("calculateTimeButton.text")); // NOI18N
@@ -1014,7 +1015,7 @@ public class MainView extends javax.swing.JFrame
     jPanel8.setLayout(jPanel8Layout);
     jPanel8Layout.setHorizontalGroup(
       jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGap(0, 788, Short.MAX_VALUE)
+      .addGap(0, 390, Short.MAX_VALUE)
       .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
         .addGroup(jPanel8Layout.createSequentialGroup()
           .addGap(13, 13, 13)
@@ -1022,14 +1023,14 @@ public class MainView extends javax.swing.JFrame
             .addGroup(jPanel8Layout.createSequentialGroup()
               .addComponent(jLabelJobName)
               .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-              .addComponent(jTextFieldJobName, javax.swing.GroupLayout.DEFAULT_SIZE, 377, Short.MAX_VALUE)
-              .addGap(199, 199, 199)
+              .addComponent(jTextFieldJobName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+              .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
               .addComponent(executeJobButton))
             .addGroup(jPanel8Layout.createSequentialGroup()
               .addComponent(jLabel10)
               .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
               .addComponent(timeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-              .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 410, Short.MAX_VALUE)
+              .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
               .addComponent(calculateTimeButton)))
           .addGap(13, 13, 13)))
     );

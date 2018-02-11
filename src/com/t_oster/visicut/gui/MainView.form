@@ -533,9 +533,9 @@
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="laserCutterComboBox" alignment="0" pref="762" max="32767" attributes="1"/>
+                              <Component id="laserCutterComboBox" alignment="0" pref="372" max="32767" attributes="1"/>
                               <Group type="102" alignment="1" attributes="0">
-                                  <Component id="materialComboBox" pref="725" max="32767" attributes="1"/>
+                                  <Component id="materialComboBox" pref="335" max="32767" attributes="1"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="btAddMaterial" min="-2" pref="31" max="-2" attributes="0"/>
                               </Group>
@@ -548,7 +548,7 @@
                                       </Group>
                                       <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace pref="402" max="32767" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                                   <Component id="jCheckBox1" min="-2" pref="197" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -556,17 +556,17 @@
                                       <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="0" pref="680" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="290" max="32767" attributes="0"/>
                               </Group>
-                              <Component id="jSeparator1" alignment="0" pref="762" max="32767" attributes="0"/>
+                              <Component id="jSeparator1" alignment="0" pref="372" max="32767" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="objectComboBox" pref="668" max="32767" attributes="0"/>
+                                  <Component id="objectComboBox" pref="278" max="32767" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jPanel9" max="32767" attributes="0"/>
                               </Group>
-                              <Component id="mappingTabbedPane" alignment="0" pref="762" max="32767" attributes="0"/>
+                              <Component id="mappingTabbedPane" alignment="0" pref="372" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -607,7 +607,7 @@
                               <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="1"/>
                           </Group>
                           <Component id="mappingTabbedPane" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="18" max="32767" attributes="0"/>
+                          <EmptySpace pref="215" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -838,23 +838,23 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="788" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="390" max="32767" attributes="0"/>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabelJobName" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextFieldJobName" pref="377" max="32767" attributes="0"/>
-                                  <EmptySpace min="-2" pref="199" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jTextFieldJobName" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace pref="26" max="32767" attributes="0"/>
                                   <Component id="executeJobButton" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="timeLabel" min="-2" pref="166" max="-2" attributes="0"/>
-                                  <EmptySpace pref="410" max="32767" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                                   <Component id="calculateTimeButton" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -901,6 +901,7 @@
             </Component>
             <Component class="javax.swing.JTextField" name="jTextFieldJobName">
               <Properties>
+                <Property name="columns" type="int" value="10"/>
                 <Property name="name" type="java.lang.String" value="jTextFieldJobName" noResource="true"/>
               </Properties>
             </Component>
