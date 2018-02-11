@@ -607,7 +607,7 @@
                               <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="1"/>
                           </Group>
                           <Component id="mappingTabbedPane" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="215" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -838,7 +838,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="390" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="398" max="32767" attributes="0"/>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
@@ -847,14 +847,14 @@
                                   <Component id="jLabelJobName" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jTextFieldJobName" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="26" max="32767" attributes="0"/>
+                                  <EmptySpace pref="34" max="32767" attributes="0"/>
                                   <Component id="executeJobButton" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="timeLabel" min="-2" pref="166" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="20" max="32767" attributes="0"/>
                                   <Component id="calculateTimeButton" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>

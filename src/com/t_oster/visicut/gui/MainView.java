@@ -970,7 +970,7 @@ public class MainView extends javax.swing.JFrame
           .addComponent(objectComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
           .addComponent(jLabel2))
         .addComponent(mappingTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        .addContainerGap(215, Short.MAX_VALUE))
+        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
     );
 
     java.util.ResourceBundle bundle1 = java.util.ResourceBundle.getBundle("com/t_oster/visicut/gui/resources/MainView"); // NOI18N
@@ -1015,7 +1015,7 @@ public class MainView extends javax.swing.JFrame
     jPanel8.setLayout(jPanel8Layout);
     jPanel8Layout.setHorizontalGroup(
       jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGap(0, 390, Short.MAX_VALUE)
+      .addGap(0, 398, Short.MAX_VALUE)
       .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
         .addGroup(jPanel8Layout.createSequentialGroup()
           .addGap(13, 13, 13)
@@ -1024,13 +1024,13 @@ public class MainView extends javax.swing.JFrame
               .addComponent(jLabelJobName)
               .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
               .addComponent(jTextFieldJobName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-              .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+              .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
               .addComponent(executeJobButton))
             .addGroup(jPanel8Layout.createSequentialGroup()
               .addComponent(jLabel10)
               .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
               .addComponent(timeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-              .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+              .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
               .addComponent(calculateTimeButton)))
           .addGap(13, 13, 13)))
     );
